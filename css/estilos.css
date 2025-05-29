@@ -1,13 +1,56 @@
 /* reseteo css */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
+html{
+  font-size: 10px;
+}
 
 .social-icons i {
-      font-size: 2rem;
-      margin: 0 0.5rem;
-    }
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+
+.fondo{
+  background-color: rgb(116, 177, 116);
+}
+
+.contenedor {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "publicidad publicidad"
+    "footer footer";
+  gap: 1rem;
+}
+
+.encabezado {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .publicacion{
+  padding: 1rem;
+}
+
+.publicidad {
+  grid-area: publicidad;
+  
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.carousel-item img {
+  height: 25rem;
+}
