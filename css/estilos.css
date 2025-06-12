@@ -44,7 +44,13 @@ html{
 
 .publicidad {
   grid-area: publicidad;
-  
+  position: fixed;
+  background-color: rgb(53, 53, 187);
+  bottom: 0;
+  height: 4rem;
+  width: 98%;
+  text-align: center;
+  margin: 0.5rem;
 }
 
 .footer {
@@ -52,5 +58,13 @@ html{
 }
 
 .carousel-item img {
-  height: 25rem;
+  height: 15rem;
+}
+
+.nav-link__hover:hover {
+  color: rgb(204, 36, 36);
+}
+
+.transiciones{
+  transition: 0.5s;
 }
