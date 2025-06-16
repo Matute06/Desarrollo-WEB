@@ -5,66 +5,60 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 10px;
 }
 
+/*iconos de redes sociales*/
 .social-icons i {
   font-size: 2rem;
   margin: 0 0.5rem;
 }
 
-.fondo{
+/*contenido*/
+.fondo {
   background-color: rgb(116, 177, 116);
 }
-
-.contenedor {
+.fondo .contenedor {
   display: grid;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "publicidad publicidad"
-    "footer footer";
+  grid-template-areas: "header header" "main main" "publicidad publicidad" "footer footer";
   gap: 1rem;
 }
-
-.encabezado {
+.fondo .contenedor .encabezado {
   grid-area: header;
 }
-
-.main {
+.fondo .contenedor .main {
   grid-area: main;
   display: flex;
   flex-wrap: wrap;
 }
-
-.main .publicacion{
+.fondo .contenedor .main .publicacion {
   padding: 1rem;
 }
-
-.publicidad {
+.fondo .contenedor .publicidad {
   grid-area: publicidad;
   position: fixed;
-  background-color: rgb(53, 53, 187);
+  background-color: rgb(43, 124, 100);
   bottom: 0;
   height: 4rem;
   width: 98%;
   text-align: center;
   margin: 0.5rem;
 }
-
-.footer {
+.fondo .contenedor .footer {
   grid-area: footer;
 }
-
-.carousel-item img {
+.fondo .contenedor .carousel-item img {
   height: 15rem;
 }
-
-.nav-link__hover:hover {
-  color: rgb(204, 36, 36);
+.fondo .contenedor .categoria-altura {
+  padding-top: 1rem;
+}
+.fondo .contenedor .categoria-animacion:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: rgb(83, 122, 80);
+  border-radius: 0.5rem;
 }
 
-.transiciones{
-  transition: 0.5s;
-}
+/*# sourceMappingURL=estilos.css.map */

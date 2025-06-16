@@ -1,0 +1,74 @@
+//variables
+@use "utilities/variables";
+
+/* reseteo css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+/*iconos de redes sociales*/
+.social-icons i {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+
+/*contenido*/
+.fondo {
+  background-color: rgb(116, 177, 116);
+  .contenedor {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "publicidad publicidad"
+      "footer footer";
+    gap: 1rem;
+    .encabezado {
+      grid-area: header;
+    }
+
+    .main {
+      grid-area: main;
+      display: flex;
+      flex-wrap: wrap;
+      .publicacion {
+        padding: 1rem;
+      }
+    }
+
+    .publicidad {
+      grid-area: publicidad;
+      position: fixed;
+      background-color: rgb(43, 124, 100);
+      bottom: 0;
+      height: 4rem;
+      width: 98%;
+      text-align: center;
+      margin: 0.5rem;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+
+    .carousel-item img {
+      height: 15rem;
+    }
+
+    .categoria-altura {
+      padding-top: 1rem;
+    }
+
+    .categoria-animacion:hover {
+      transition: 0.2s;
+      cursor: pointer; 
+      background-color: variables.$fondo-oscuro;
+      border-radius: 0.5rem;
+    }
+  }
+}
